@@ -33,7 +33,7 @@ void UpdateScr(SDL_Surface * screen)
 void sdl_test(SDL_Surface * screen)
 {
     SDL_Surface * wiener;
-    char * file_name = "wiener.bmp";
+    char * file_name = "Tiles/wiener.bmp";
     wiener = IMG_Load(file_name);
     if (wiener == NULL) {
         std::cout << "Couldn't load " << file_name << " " << SDL_GetError() << '\n';
@@ -110,7 +110,7 @@ int main (int argc, char *argv[])
           if (event.key.keysym.sym == SDLK_c)
                     clean_disp(screen);
           if (event.key.keysym.sym == SDLK_F11)
-                    SDL_SaveBMP(screen, "screenshot.bmp");
+                    SDL_SaveBMP(screen, "Screenshots/screenshot.bmp");
           if (event.key.keysym.sym == SDLK_UP)
           {
           /*direction_y -= 5;
