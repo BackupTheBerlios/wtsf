@@ -5,7 +5,7 @@ Coded By Fragnatik
 
 ***********************************/
 
-#include <F-Engine.h>
+#include "Include/F-Engine.h"
 
 SDL_Surface *screen = NULL;
 
@@ -33,7 +33,7 @@ void UpdateScr(SDL_Surface * screen)
 void sdl_test(SDL_Surface * screen)
 {
     SDL_Surface * wiener;
-    char * file_name = "Tiles/wiener.bmp";
+    char * file_name = "Tileset/wiener.bmp";
     wiener = IMG_Load(file_name);
     if (wiener == NULL) {
         std::cout << "Couldn't load " << file_name << " " << SDL_GetError() << '\n';
